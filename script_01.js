@@ -42,7 +42,6 @@ function ausgabeNamenParam(firstName)
     }
 
     console.log("Hallo " + firstName + "!");
-
 }
 // ausgabeNamenParam("Mia")
 // ausgabeNamenParam("Melanie")
@@ -52,9 +51,27 @@ function ausgabeNamenParam(firstName)
 /******* Funktionen 2c ******/
 // Mehrere Parameter
 
-function ausgabeNamenParams(firstName,familyName) {
-    console.log("Hallo " + firstName + "" + familyName + "!");
+// function ausgabeNamenParams(firstName,familyName) {
+//     console.log("Hallo " + firstName + " " + familyName + "!");
 
+// }
+// ausgabeNamenParams("Thomas","Sonntag")
+// ausgabeNamenParams(prompt("Vorname?"), prompt("Nachnamen?"))
+
+/***** Funktionen 3a *******/
+//  3a Vorbereitung
+// Postulat one function = one job (uncel bob)
+
+
+
+function ausgabeNamenParams2(firstName,familyName) {
+
+// 1. Funktionalität: String composing
+
+    const gap = " ";
+    const outputStr = "Hallo" + gap + firstName + gap + familyName + "!";
+
+    // 2. Funktionalität: data output
+    console.log(outputStr)
 }
-ausgabeNamenParams("Thomas", "Sonntag")
-ausgabeNamenParams(prompt("Vorname?"), prompt( "Nachnamen?"))
+ ausgabeNamenParams2("Thomas","Sonntag")
